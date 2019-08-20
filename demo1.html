@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation Demo</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+
+		nav{
+			background-color: #1256ff;
+			padding: 10px 20px;
+		}
+        .menu{
+        	position: relative;
+        	display: inline;
+			margin: 10px 20px;
+		}
+
+       a{
+			text-decoration: none;
+			color: #FFFFFF;
+			padding: 10px;
+		}
+		a:hover{ 
+			background-color: red;	
+			text-transform: uppercase;
+		}
+		ul{
+			list-style-type: none;
+			padding:10px 20px;
+		}
+		ul li ul {
+			background-color: #000;
+			display: block;
+			float:none;
+			display: none;
+		}
+		ul li ul li {
+			float: none;
+		}
+		ul li:hover ul {
+			display: block;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class = "menu">
+				    <a href ="#">Home</a>
+				    <ul>
+					<li class = "submenu1"><a href ="A">A</a></li>
+				    <li class = "submenu1"><a href ="B">B</a></li>
+				    <li class = "submenu1"><a href ="C">C</a></li>
+				</ul>
+				</li>
+
+				<li class = "menu">
+                    <a href ="#">About</a>
+                    <ul>
+					<li class = "submenu2"><a href ="#">A</a></li>
+				    <li class = "submenu2"><a href ="#">B</a></li>
+				    <li class = "submenu2"><a href ="#">C</a></li>
+				    </ul>
+				</li>
+				<li class = "menu">
+					<a href ="#">Contact</a>
+					<ul>
+					<li class = "submenu3"><a href ="#">A</a></li>
+				    <li class = "submenu3"><a href ="#">B</a></li>
+				    <li class = "submenu3"><a href ="#">C</a></li>
+				     </ul>
+				</li>
+				<li class = "menu" style = "float:right; margin:1px" >
+					<a href ="#">Services</a>
+					<ul>
+					<li class = "submenu4"><a href ="#">A</a></li>
+				    <li class = "submenu4"><a href ="#">B</a></li>
+				    <li class = "submenu4"><a href ="#">C</a></li>
+				    </ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
