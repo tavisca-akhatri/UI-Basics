@@ -1,90 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Navigation Demo</title>
-	<style>
-		*{
-			padding:0;
-			margin:0;
+    <title>Navigation Demo</title>
+    <style>
+    	ul{
+		   padding:0;
+		   margin:0;
+		   list-style-type:none;
+		   background-color: blue;
+		}
+		ul li {
+		    float:left;
+		    height:40px;
+		    width: 200px;
+		    background-color: blue;
+		    text-align: center;
 		}
 
-		nav{
-			background-color: #1256ff;
-			padding: 10px 20px;
-		}
-        .menu{
-        	position: relative;
-        	display: inline;
-			margin: 10px 20px;
-		}
-
-       a{
+        ul li a{
 			text-decoration: none;
-			color: #FFFFFF;
+			color: #111111;
 			padding: 10px;
+			display:block;
 		}
-		a:hover{ 
-			background-color: red;	
+		ul li a:hover{
+			background-color: red;
 			text-transform: uppercase;
 		}
-		ul{
-			list-style-type: none;
-			padding:10px 20px;
+	    ul li ul li {
+		    display: none;
 		}
-		ul li ul {
-			background-color: #000;
-			display: block;
-			float:none;
-			display: none;
-		}
-		ul li ul li {
-		    float: none;
-		}
-		ul li:hover ul {
+		ul li:hover ul li{
 			display: block;
 		}
-		
 	</style>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li class = "menu">
-				    <a href ="#">Home</a>
-				    <ul>
-					<li class = "submenu1"><a href ="A">A</a></li>
-				    <li class = "submenu1"><a href ="B">B</a></li>
-				    <li class = "submenu1"><a href ="C">C</a></li>
-				</ul>
-				</li>
-
-				<li class = "menu">
-                    <a href ="#">About</a>
-                    <ul>
-					<li class = "submenu2"><a href ="#">A</a></li>
-				    <li class = "submenu2"><a href ="#">B</a></li>
-				    <li class = "submenu2"><a href ="#">C</a></li>
-				    </ul>
-				</li>
-				<li class = "menu">
-					<a href ="#">Contact</a>
-					<ul>
-					<li class = "submenu3"><a href ="#">A</a></li>
-				    <li class = "submenu3"><a href ="#">B</a></li>
-				    <li class = "submenu3"><a href ="#">C</a></li>
-				     </ul>
-				</li>
-				<li class = "menu" style = "float:right; margin:1px" >
-					<a href ="#">Services</a>
-					<ul>
-					<li class = "submenu4"><a href ="#">A</a></li>
-				    <li class = "submenu4"><a href ="#">B</a></li>
-				    <li class = "submenu4"><a href ="#">C</a></li>
-				    </ul>
-				</li>
-			</ul>
-		</nav>
-	</header>
+<header>
+    <ul>
+        <nav style="color:blue">
+            <li class="menu">
+                <a href="#">Home</a>
+                <ul class="submenu1">
+                    <li><a href="A">A</a></li>
+                    <li><a href="B">B</a></li>
+                    <li><a href="C">C</a></li>
+                </ul>
+            </li>
+            <li class="menu-1">
+                <a href="#">About</a>
+                <ul class="submenu2">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                </ul>
+            </li>
+            <li class="menu-2">
+                <a href="#">Contact</a>
+                <ul class="submenu3">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                </ul>
+            </li>
+            <li class="menu-3">
+                <a href="#">Information</a>
+                <ul class="submenu4">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                </ul>
+            </li>
+            <li class="menu-4">
+                <a href="#">Navigate</a>
+                <ul class="submenu5">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                </ul>
+            </li>
+            <li class="menu-5" style="float:right; margin:1px">
+                <a href="#">Services</a>
+                <ul class="submenu6">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                </ul>
+            </li>
+    </ul>
+    </nav>
+</header>
 </body>
 </html>
